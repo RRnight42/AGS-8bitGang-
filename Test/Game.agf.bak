@@ -677,11 +677,11 @@
         <GUIs>
           <GUIMain>
             <NormalGUI>
-              <BackgroundColor>12710</BackgroundColor>
+              <BackgroundColor>65535</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <BorderColor>0</BorderColor>
               <Clickable>False</Clickable>
-              <Height>70</Height>
+              <Height>140</Height>
               <ID>0</ID>
               <Left>10</Left>
               <Name>gui_Dialogues</Name>
@@ -699,29 +699,29 @@
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>50</Height>
+                <Height>85</Height>
                 <ID>0</ID>
-                <Left>80</Left>
+                <Left>172</Left>
                 <Locked>False</Locked>
                 <Name>t_Text</Name>
                 <Text xml:space="preserve">Character Dialogue</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>62285</TextColor>
-                <Top>10</Top>
+                <Top>44</Top>
                 <Visible>True</Visible>
-                <Width>530</Width>
+                <Width>432</Width>
                 <ZOrder>0</ZOrder>
               </GUILabel>
               <GUIButton>
                 <ClickAction>RunScript</ClickAction>
                 <Clickable>False</Clickable>
-                <ClipImage>False</ClipImage>
+                <ClipImage>True</ClipImage>
                 <Enabled>True</Enabled>
                 <Font>0</Font>
-                <Height>60</Height>
+                <Height>100</Height>
                 <ID>1</ID>
                 <Image>0</Image>
-                <Left>10</Left>
+                <Left>22</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>0</MouseoverImage>
                 <Name>t_Icon</Name>
@@ -731,11 +731,28 @@
                 <Text />
                 <TextAlignment>TopCenter</TextAlignment>
                 <TextColor>0</TextColor>
-                <Top>5</Top>
+                <Top>23</Top>
                 <Visible>True</Visible>
-                <Width>60</Width>
+                <Width>100</Width>
                 <ZOrder>1</ZOrder>
               </GUIButton>
+              <GUILabel>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Font>0</Font>
+                <Height>21</Height>
+                <ID>2</ID>
+                <Left>172</Left>
+                <Locked>False</Locked>
+                <Name>t_character</Name>
+                <Text xml:space="preserve">Character name</Text>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>62285</TextColor>
+                <Top>11</Top>
+                <Visible>True</Visible>
+                <Width>121</Width>
+                <ZOrder>2</ZOrder>
+              </GUILabel>
             </Controls>
           </GUIMain>
         </GUIs>
@@ -970,13 +987,13 @@
             <NormalView>1</NormalView>
             <Properties />
             <RealName>Pomni</RealName>
-            <ScriptName>cPomni</ScriptName>
+            <ScriptName>cPlayer</ScriptName>
             <Solid>False</Solid>
             <SpeechAnimationDelay>0</SpeechAnimationDelay>
             <SpeechColor>34623</SpeechColor>
             <SpeechView>0</SpeechView>
-            <StartX>298</StartX>
-            <StartY>346</StartY>
+            <StartX>852</StartX>
+            <StartY>394</StartY>
             <StartingRoom>1</StartingRoom>
             <ThinkingView>0</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -985,262 +1002,10 @@
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <Interactions>
               <Event Index="0" />
-              <Event Index="1" />
+              <Event Index="1">cPlayer_Interact</Event>
               <Event Index="2" />
               <Event Index="3" />
-              <Event Index="4" />
-              <Event Index="5" />
-              <Event Index="6" />
-              <Event Index="7" />
-            </Interactions>
-          </Character>
-          <Character>
-            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
-            <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>0</BlinkingView>
-            <Clickable>True</Clickable>
-            <DiagonalLoops>True</DiagonalLoops>
-            <ID>1</ID>
-            <IdleAnimationDelay>4</IdleAnimationDelay>
-            <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
-            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>3</MovementSpeed>
-            <MovementSpeedX>0</MovementSpeedX>
-            <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
-            <Properties />
-            <RealName>Jax</RealName>
-            <ScriptName>cJax</ScriptName>
-            <Solid>True</Solid>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
-            <SpeechView>0</SpeechView>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
-            <StartingRoom>-1</StartingRoom>
-            <ThinkingView>0</ThinkingView>
-            <TurnBeforeWalking>True</TurnBeforeWalking>
-            <UniformMovementSpeed>True</UniformMovementSpeed>
-            <UseRoomAreaLighting>True</UseRoomAreaLighting>
-            <UseRoomAreaScaling>True</UseRoomAreaScaling>
-            <Interactions>
-              <Event Index="0" />
-              <Event Index="1" />
-              <Event Index="2" />
-              <Event Index="3" />
-              <Event Index="4" />
-              <Event Index="5" />
-              <Event Index="6" />
-              <Event Index="7" />
-            </Interactions>
-          </Character>
-          <Character>
-            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
-            <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>0</BlinkingView>
-            <Clickable>True</Clickable>
-            <DiagonalLoops>True</DiagonalLoops>
-            <ID>2</ID>
-            <IdleAnimationDelay>4</IdleAnimationDelay>
-            <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
-            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>3</MovementSpeed>
-            <MovementSpeedX>0</MovementSpeedX>
-            <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
-            <Properties />
-            <RealName>Zooble</RealName>
-            <ScriptName>cZooble</ScriptName>
-            <Solid>True</Solid>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
-            <SpeechView>0</SpeechView>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
-            <StartingRoom>-1</StartingRoom>
-            <ThinkingView>0</ThinkingView>
-            <TurnBeforeWalking>True</TurnBeforeWalking>
-            <UniformMovementSpeed>True</UniformMovementSpeed>
-            <UseRoomAreaLighting>True</UseRoomAreaLighting>
-            <UseRoomAreaScaling>True</UseRoomAreaScaling>
-            <Interactions>
-              <Event Index="0" />
-              <Event Index="1" />
-              <Event Index="2" />
-              <Event Index="3" />
-              <Event Index="4" />
-              <Event Index="5" />
-              <Event Index="6" />
-              <Event Index="7" />
-            </Interactions>
-          </Character>
-          <Character>
-            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
-            <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>0</BlinkingView>
-            <Clickable>True</Clickable>
-            <DiagonalLoops>True</DiagonalLoops>
-            <ID>3</ID>
-            <IdleAnimationDelay>4</IdleAnimationDelay>
-            <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
-            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>3</MovementSpeed>
-            <MovementSpeedX>0</MovementSpeedX>
-            <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
-            <Properties />
-            <RealName>Ragatha</RealName>
-            <ScriptName>cRagatha</ScriptName>
-            <Solid>True</Solid>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
-            <SpeechView>0</SpeechView>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
-            <StartingRoom>-1</StartingRoom>
-            <ThinkingView>0</ThinkingView>
-            <TurnBeforeWalking>True</TurnBeforeWalking>
-            <UniformMovementSpeed>True</UniformMovementSpeed>
-            <UseRoomAreaLighting>True</UseRoomAreaLighting>
-            <UseRoomAreaScaling>True</UseRoomAreaScaling>
-            <Interactions>
-              <Event Index="0" />
-              <Event Index="1" />
-              <Event Index="2" />
-              <Event Index="3" />
-              <Event Index="4" />
-              <Event Index="5" />
-              <Event Index="6" />
-              <Event Index="7" />
-            </Interactions>
-          </Character>
-          <Character>
-            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
-            <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>0</BlinkingView>
-            <Clickable>True</Clickable>
-            <DiagonalLoops>True</DiagonalLoops>
-            <ID>4</ID>
-            <IdleAnimationDelay>4</IdleAnimationDelay>
-            <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
-            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>3</MovementSpeed>
-            <MovementSpeedX>0</MovementSpeedX>
-            <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
-            <Properties />
-            <RealName>Kinger</RealName>
-            <ScriptName>cKinger</ScriptName>
-            <Solid>True</Solid>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
-            <SpeechView>0</SpeechView>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
-            <StartingRoom>-1</StartingRoom>
-            <ThinkingView>0</ThinkingView>
-            <TurnBeforeWalking>True</TurnBeforeWalking>
-            <UniformMovementSpeed>True</UniformMovementSpeed>
-            <UseRoomAreaLighting>True</UseRoomAreaLighting>
-            <UseRoomAreaScaling>True</UseRoomAreaScaling>
-            <Interactions>
-              <Event Index="0" />
-              <Event Index="1" />
-              <Event Index="2" />
-              <Event Index="3" />
-              <Event Index="4" />
-              <Event Index="5" />
-              <Event Index="6" />
-              <Event Index="7" />
-            </Interactions>
-          </Character>
-          <Character>
-            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
-            <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>0</BlinkingView>
-            <Clickable>True</Clickable>
-            <DiagonalLoops>True</DiagonalLoops>
-            <ID>5</ID>
-            <IdleAnimationDelay>4</IdleAnimationDelay>
-            <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
-            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>3</MovementSpeed>
-            <MovementSpeedX>0</MovementSpeedX>
-            <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
-            <Properties />
-            <RealName>Caine</RealName>
-            <ScriptName>cCaine</ScriptName>
-            <Solid>True</Solid>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
-            <SpeechView>0</SpeechView>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
-            <StartingRoom>-1</StartingRoom>
-            <ThinkingView>0</ThinkingView>
-            <TurnBeforeWalking>True</TurnBeforeWalking>
-            <UniformMovementSpeed>True</UniformMovementSpeed>
-            <UseRoomAreaLighting>True</UseRoomAreaLighting>
-            <UseRoomAreaScaling>True</UseRoomAreaScaling>
-            <Interactions>
-              <Event Index="0" />
-              <Event Index="1" />
-              <Event Index="2" />
-              <Event Index="3" />
-              <Event Index="4" />
-              <Event Index="5" />
-              <Event Index="6" />
-              <Event Index="7" />
-            </Interactions>
-          </Character>
-          <Character>
-            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
-            <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>0</BlinkingView>
-            <Clickable>True</Clickable>
-            <DiagonalLoops>True</DiagonalLoops>
-            <ID>6</ID>
-            <IdleAnimationDelay>4</IdleAnimationDelay>
-            <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
-            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>3</MovementSpeed>
-            <MovementSpeedX>0</MovementSpeedX>
-            <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
-            <Properties />
-            <RealName>Gangle</RealName>
-            <ScriptName>cGangle</ScriptName>
-            <Solid>True</Solid>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
-            <SpeechView>0</SpeechView>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
-            <StartingRoom>-1</StartingRoom>
-            <ThinkingView>0</ThinkingView>
-            <TurnBeforeWalking>True</TurnBeforeWalking>
-            <UniformMovementSpeed>True</UniformMovementSpeed>
-            <UseRoomAreaLighting>True</UseRoomAreaLighting>
-            <UseRoomAreaScaling>True</UseRoomAreaScaling>
-            <Interactions>
-              <Event Index="0" />
-              <Event Index="1" />
-              <Event Index="2" />
-              <Event Index="3" />
-              <Event Index="4" />
+              <Event Index="4">cPlayer_AnyClick</Event>
               <Event Index="5" />
               <Event Index="6" />
               <Event Index="7" />
@@ -1399,7 +1164,7 @@
         <OutlineStyle>None</OutlineStyle>
         <PointSize>0</PointSize>
         <SizeMultiplier>1</SizeMultiplier>
-        <SourceFilename />
+        <SourceFilename xml:space="preserve">Recursos AGS 2023/Recursos AGS/Fuentes/Fuentes extendidas/AGSFNT3.WFN</SourceFilename>
         <TTFMetricsFixup>None</TTFMetricsFixup>
         <VerticalOffset>0</VerticalOffset>
       </Font>
@@ -1413,7 +1178,7 @@
         <OutlineStyle>UseOutlineFont</OutlineStyle>
         <PointSize>0</PointSize>
         <SizeMultiplier>1</SizeMultiplier>
-        <SourceFilename />
+        <SourceFilename xml:space="preserve">Recursos AGS 2023/Recursos AGS/Fuentes/Fuentes extendidas/AGSFNT3.WFN</SourceFilename>
         <TTFMetricsFixup>None</TTFMetricsFixup>
         <VerticalOffset>0</VerticalOffset>
       </Font>
@@ -1427,7 +1192,7 @@
         <OutlineStyle>None</OutlineStyle>
         <PointSize>0</PointSize>
         <SizeMultiplier>1</SizeMultiplier>
-        <SourceFilename />
+        <SourceFilename xml:space="preserve">Recursos AGS 2023/Recursos AGS/Fuentes/Fuentes extendidas/AGSFNT3.WFN</SourceFilename>
         <TTFMetricsFixup>None</TTFMetricsFixup>
         <VerticalOffset>0</VerticalOffset>
       </Font>
@@ -1717,6 +1482,11 @@
           <Name>TalkedToJaxFirst</Name>
           <Type>bool</Type>
         </GlobalVariable>
+        <GlobalVariable>
+          <DefaultValue>false</DefaultValue>
+          <Name>nameRevealed</Name>
+          <Type>bool</Type>
+        </GlobalVariable>
       </Variables>
     </GlobalVariables>
     <Sprites>
@@ -1857,6 +1627,116 @@
                   <OffsetY>0</OffsetY>
                   <ImportHeight>480</ImportHeight>
                   <ImportWidth>640</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Dialogs">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="1" Width="100" Height="100" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\rober\OneDrive\Escritorio\Path ags repo\Recursos proyecto\dialogos\Caine.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>100</ImportHeight>
+                  <ImportWidth>100</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="9" Width="100" Height="100" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\rober\OneDrive\Escritorio\Path ags repo\Recursos proyecto\dialogos\Gangle.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>100</ImportHeight>
+                  <ImportWidth>100</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="10" Width="100" Height="100" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\rober\OneDrive\Escritorio\Path ags repo\Recursos proyecto\dialogos\Jax.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>100</ImportHeight>
+                  <ImportWidth>100</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="11" Width="100" Height="102" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\rober\OneDrive\Escritorio\Path ags repo\Recursos proyecto\dialogos\Kinger.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>102</ImportHeight>
+                  <ImportWidth>100</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="12" Width="100" Height="100" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\rober\OneDrive\Escritorio\Path ags repo\Recursos proyecto\dialogos\Pomni.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>100</ImportHeight>
+                  <ImportWidth>100</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="13" Width="100" Height="100" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\rober\OneDrive\Escritorio\Path ags repo\Recursos proyecto\dialogos\Ragatha.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>100</ImportHeight>
+                  <ImportWidth>100</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="14" Width="100" Height="100" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>C:\Users\rober\OneDrive\Escritorio\Path ags repo\Recursos proyecto\dialogos\Zooble.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>100</ImportHeight>
+                  <ImportWidth>100</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
